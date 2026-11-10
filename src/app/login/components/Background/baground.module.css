@@ -1,0 +1,43 @@
+.container {
+  height: 100dvh;
+  max-height: 100dvh;
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+.bottom_shape {
+  position: absolute;
+  height: 80dvh;
+  aspect-ratio: 1.20;
+  border-radius: 50%;
+  background: var(--highlight);
+
+  bottom: 0px;
+  left: 0px;
+  translate: -50% 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &>div {
+    border: 3px solid white;
+    aspect-ratio: 1.2;
+    height: 90%;
+    border-radius: 50%;
+  }
+}
+
+.top_shape {
+  position: absolute;
+  height: 60dvh;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: var(--primary);
+
+  top: 0px;
+  right: 0px;
+  translate: 20% -20%;
+}
