@@ -2,18 +2,31 @@
   --background: #F5F4F0;
   --foreground: #FFFFFF;
   --primary: #140D4F;
-  --secondary : #97EFE9;
+  --secondary: #97EFE9;
   --highlight: #E94F37;
   --offtext: #808080;
+  --font-mono: var(--font-cascadia);
+
 }
+
 
 * {
   padding: 0px;
   margin: 0px;
 }
 
+button {
+  cursor: pointer;
+  transition: transform 0.3s linear;
+
+  &:active {
+    transform: scale(0.97);
+  }
+}
+
 body {
   background: var(--background);
   width: 100%;
   height: 100dvh;
+  font-family: var(--font-mono);
 }
